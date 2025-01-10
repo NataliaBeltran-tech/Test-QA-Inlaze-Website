@@ -56,15 +56,15 @@ cypress/​specs/
 
 2. Ejecutar Cypress en Modo de Ejecución Automática (Headless)
 
-Para ejecutar las pruebas directamente desde el terminal sin interfaz: npx cypress run --spec "cypress/specs/login_de_usuarios.cy.js" o 
+   Para ejecutar las pruebas directamente desde el terminal sin interfaz: npx cypress run --spec "cypress/specs/login_de_usuarios.cy.js" o 
 
-npx cypress run --spec "cypress/specs/registro_de_usuarios.cy.js", esto ejecutará los scripts y mostrará el resultado en el terminal.
+   npx cypress run --spec "cypress/specs/registro_de_usuarios.cy.js", esto ejecutará los scripts y mostrará el resultado en el terminal.
 
 3. Configuración Opcional
 
-Si deseas que Cypress se ejecute en un navegador diferente al predeterminado (Chrome, Firefox, etc.), puedes especificarlo así:
+   Si deseas que Cypress se ejecute en un navegador diferente al predeterminado (Chrome, Firefox, etc.), puedes especificarlo así:
 
-npx cypress run --spec "cypress/specs/login_de_usuarios.cy.js" --browser chrome
+   npx cypress run --spec "cypress/specs/login_de_usuarios.cy.js" --browser chrome
 
 4. Solución de Problemas
 

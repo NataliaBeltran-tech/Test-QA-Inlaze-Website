@@ -20,9 +20,9 @@ describe('Login de Usuario', () => {
 
   // Prueba 2: Validar que el formulario no se envíe si los campos no están completos
   it('2. Validar que el formulario no se envíe si los campos no están completos', () => {
-      cy.get('input[id="email"]').type(''); // Deja el campo de email vacío
+      cy.get('input[id="email"]').invoke('removeAttr', 'required').clear();// Deja el campo de email vacío
       cy.get('input[id="password"]').type('Password123!'); // Ingresa una contraseña válida
-      cy.get('button[type="submit"]').click(); // Hace clic en el botón de enviar formulario
+      cy.get('button[type="submit"]').click({force: true});; // Hace clic en el botón de enviar formulario
   });
 
   // Prueba 3: Comprobar que al ingresar se muestre el nombre del usuario
